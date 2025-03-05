@@ -4,3 +4,38 @@
   --font-inter: "Inter", sans-serif;
 }
 
+.btn:hover{
+  @apply opacity-90
+}
+.btn_outline{
+  @apply bg-transparent
+}
+.btn_outline:hover{
+
+  @apply bg-[#f49f0a] 
+}
+/* styles.css */
+@keyframes move {
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.movingY {
+  animation: move 3s linear infinite;
+}
+
+.spin-slow {
+  animation: spin-slow 5s linear infinite;
+}
+
+
