@@ -26,7 +26,7 @@
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 op-[-400px] transition-all ease-in duration 500">
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 op-[-400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">Home</a>
             </li>
@@ -42,56 +42,260 @@
         </ul>
     </nav>
     <!---------------------------------------Home-------------------------------------------------->
-    <section id="Home" class="py-20 md:py-28">
+    <section id="Home" class="py-20 md:py-28 relative">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <!------------------------------------Blob1---------------------------------->
+            <div class="w-64 h-64 bg-blue-500 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 right-1/3 transform -translate-x-1/2 -translate-y-1/2">
+            </div>
+
+            <!----------------------------Blob2---------------------------------->
+            <div class="w-64 h-64 bg-blue-500 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-10">
+            </div>
             <div class="flex flex-col items-start gap-5 lg:flex-row lg:justify-between">
+
               <!-------------------------------Content----------------------------------------------------->
-                <div class="w-full lg:w-1/2 space-y-5">
-                    <h1 class="text-[48px] text-white">
-                        Votre <span class="text-[#f49f0a] text-[48px] font-bold">Partenaire</span> en <span class="text-[#f49f0a] font-bold">Communication</span> et 
-                        <br>
-                        <span class="text-[#f49f0a] font-bold">Publicité</span>
-                    </h1>
-                    <p class="text-slate-300 font-Lobster">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat quam corrupti vitae perspiciatis, 
-                        sint exercitationem accusantium inventore illo veritatis modi cupiditate facilis, tempora amet ipsam omnis iste, 
-                        laborum assumenda.
-                    </p> 
-                    <div class="flex flex-row gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10 text-white">
-                        <button class="btn border btn_outline border-[#f49f0a] bg-[#f49f0a] opacity-90 rounded-md px-5 py-2 duration-300 cursor-pointer">
-                            <span>Contact Us</span>
-                            <ion-icon name="color-palette-outline"></ion-icon>
-                        </button>
-                        <button class="btn border btn_outline border-[#f49f0a] bg-[#f49f0a] opacity-90 rounded-md px-5 py-2 duration-300 cursor-pointer">
-                            <span>About Us</span>
-                            <ion-icon name="color-palette-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <div class="flex items-center gap-5 text-lg lg:pt10">
-                        <i class="ri-twitter-x-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                        <i class="ri-instagram-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                        <i class="ri-facebook-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                        <i class="ri-linkedin-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                    </div>
+              <div class="w-full space-y-5">
+                <h1 class="text-[48px] text-white">
+                    Votre <span class="text-[#f49f0a] text-[48px] font-bold">Partenaire</span> en <span class="text-[#f49f0a] font-bold">Communication</span> et
+                    <br>
+                    <span class="text-[#f49f0a] font-bold">Publicité</span>
+                </h1>
+                <p class="text-slate-300 font-Lobster">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat quam corrupti vitae perspiciatis,
+                    sint exercitationem accusantium inventore illo veritatis modi cupiditate facilis, tempora amet ipsam omnis iste,
+                    laborum assumenda.
+                </p>
+                <div class="flex flex-row gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10 text-white">
+                    <button class="btn border btn_outline border-[#f49f0a] bg-[#f49f0a] opacity-90 rounded-md px-5 py-2 duration-300 cursor-pointer">
+                        <span>Contact Us</span>
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                    </button>
+                    <button class="btn border btn_outline border-[#f49f0a] bg-[#f49f0a] opacity-90 rounded-md px-5 py-2 duration-300 cursor-pointer">
+                        <span>About Us</span>
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                    </button>
                 </div>
+                <div class="flex items-center gap-5 text-lg lg:pt10">
+                    <i class="ri-twitter-x-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
+                    <i class="ri-instagram-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
+                    <i class="ri-facebook-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
+                    <i class="ri-linkedin-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
+                </div>
+            </div>
                 <!---------------------------------Images--------------------------------------->
-                <div class="w-full lg:w-1/2 mt-8 relative">
+                <div class="w-full mt-8 relative">
                     <img src="assets/2.jpg" alt="" class="w-full">
                     <!--Megaphone-->
-                    <div class="absolute -top-20 right-0 opacity-60  movingY ">
-                      <i class="ri-megaphone-line text-5xl text-[#f49f0a]"></i>
+                    <div class="absolute -top-20 right-0 opacity-60 movingY ">
+                        <i class="ri-megaphone-line text-5xl text-[#f49f0a]"></i>
                     </div>
                     <!-------------------Printer---------------------->
                     <div class="absolute -bottom-20 left-0 opacity-60 spin-slow">
-                      <i class="ri-printer-line text-5xl text-[#f49f0a] "></i>
+                        <i class="ri-printer-line text-5xl text-[#f49f0a] "></i>
                     </div>
                     <!-------------------------------Stat------------------------------------>
-                    <div class=" hidden absolute -top-20 left-5 opacity-60 lg:block spin-slow">
-                      <i class="ri-bar-chart-2-line text-5xl text-[#f49f0a] "></i>
+                    <div class="hidden absolute -top-20 left-5 opacity-60 lg:block scale-up">
+                        <i class="ri-bar-chart-2-line text-5xl text-[#f49f0a] "></i>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!--------------------------------------Services--------------------------------------------->
+    <div class="bg-white text-[#0a2463] py-20">
+        <div class="container mx-auto px-4 w-full">
+            <!-----------------------------------------------card1------------------------------------------------------------------>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-megaphone-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">La Publicité</p>
+                    </div>
+                    <p class="font-stretch-50%">Nous créons des campagnes publicitaires percutantes et ciblées pour augmenter votre visibilité et attirer de nouveaux clients. De la conception créative à la diffusion stratégique, nous maximisons votre impact.</p>
+                </div>
+            <!-----------------------------------------------card2------------------------------------------------------------------>
+
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-bar-chart-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Externalisation commerciale et Marketing</p>
+                    </div>
+                    <p class="font-stretch-50%"> Confiez-nous vos opérations commerciales et marketing. Nous vous apportons expertise et ressources pour développer votre chiffre d'affaires, optimiser vos stratégies et atteindre vos objectifs de croissance.</p>
+                </div>
+            <!-----------------------------------------------card3------------------------------------------------------------------>
+
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-calendar-event-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Organisation des événement</p>
+                    </div>
+                    <p class="font-stretch-50%">Nous organisons des événements mémorables et sur mesure, qu'il s'agisse de conférences, de séminaires ou de célébrations. Nous prenons en charge tous les aspects, de la planification à la réalisation.</p>
+                </div>
+            <!-----------------------------------------------card4------------------------------------------------------------------>
+
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-printer-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Impression et broderie</p>
+                    </div>
+                    <p class="font-stretch-50%">Nous réalisons des impressions de haute qualité et des broderies personnalisées pour vos vêtements, supports publicitaires et objets promotionnels. Exprimez votre identité avec des produits uniques.</p>
+                </div>
+            <!-----------------------------------------------card5------------------------------------------------------------------>
+
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-brush-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Branding et Identité visuelle</p>
+                    </div>
+                    <p class="font-stretch-50%">Nous créons des identités visuelles fortes et cohérentes qui reflètent l'essence de votre marque. Du logo à la charte graphique, nous construisons une image mémorable pour vous démarquer.</p>
+                </div>
+            <!-----------------------------------------------card6------------------------------------------------------------------>
+
+                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    <div class="flex items-center gap-5">
+                        <i class="ri-camera-line text-3xl md:text-4xl xl:text-5xl"></i>
+                        <p class="md:text-lg font-bold">Production Multimédia</p>
+                    </div>
+                    <p class="font-stretch-50%">Nous produisons des contenus multimédias captivants pour tous vos supports : vidéos, photos, animations, etc. Nous racontons votre histoire avec créativité et professionnalisme.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------About us------------------------------------------------------------------->
+    <section id="about" class="text-white relative overflow-hidden">
+        <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20 pt-8">
+            <h2 class="title text-2xl md:text-3xl xl:text-4xl">About Us</h2>
+            <p class="max-w-2xl">Follow instructions for more</p>
+        </div>
+
+        <div class="space-y-10 xl:space-y-0 ">
+            <!------------------Item1--------------------------->
+            <div class="flex flex-col items-center lg:flex-row gap-5">
+                <!-----Image------>
+                <div class="w-full lg:w-1/2 px-4">
+                    <img src="assets/2.jpg" alt="mega" class="w-full object-cover max-h-[400px]">
+                </div>
+                <!-----------Contents----------->
+                <div class="w-full lg:w-1/2">
+                    <div class="space-y-5 px-4"> <h3 class="title text-xl md:text-2xl xl:text-3xl">
+                            <span class="text-[#f49f0a]">SOS Advertising</span> <span class="text-white font-inter"> des idées qui font </span>  <span class="text-[#f49f0a]">la différence</span>
+                        </h3>
+                        <p class="font-inter">
+                            SOS ADVERTISING SARL est une agence de communication spécialisée dans la publicité, l'externalisation commerciale et marketing, la distribution et l'organisation d'événements socio-culturels.
+                            Nous employons des professionnels qualifiés et innovants pour répondre aux besoins exigeants de notre secteur d'activité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+              <!------------------Item2--------------------------->
+              <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+                <!-----Image------>
+                <div class="w-full lg:w-1/2 px-4">
+                    <img src="assets/2.jpg" alt="mega" class="w-full object-cover max-h-[400px]">
+                </div>
+                <!-----------Contents----------->
+                <div class="w-full lg:w-1/2">
+                    <div class="space-y-5 px-4"> <h3 class="title text-xl md:text-2xl xl:text-3xl">
+                            <span class="text-white font-inter">Notre engagement :  </span> <span class="text-white">Pilier de Votre Succès</span> <span class="text-[#f49f0a]"> Commercial et Publicitaire</span>
+                        </h3>
+                        <p class="font-inter">
+                            Chez SOS Advertising, notre vision est claire : être la référence incontournable pour toutes les solutions
+                            commerciales et publicitaires dans notre secteur d'activité. Nous nous engageons à apporter des solutions
+                            commerciales et de développement sur mesure, conçues pour satisfaire pleinement les désirs de nos clients.
+                            Notre mission est de construire des partenariats solides, basés sur la confiance et l'excellence, afin de
+                            propulser nos clients vers le succès. Notre objectif est de devenir le pilier de leur croissance, en leur
+                            offrant des solutions innovantes et performantes qui font la différence. 
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------------------------------------------Team------------------------------------------------------->
+    <section id="Team" class="py-20 bg-white text-[#0a2463]">
+            <div class="container mx-auto px-6 md:px-12 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <h1 class="text-4xl font-bold md:text-5xl">
+                        Meet Our Team
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aliquid.
+                    </p>
+                    <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/pdt.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Pdt Israel Kompe                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">CEO Founder</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/Benie.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Benie Mavuba                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/Pros.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Prosper Kazadi                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center mt-10">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/maestro.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Jonathan Maestro                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center mt-10">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/Chad.png" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Jonathan Maestro                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <script>
       

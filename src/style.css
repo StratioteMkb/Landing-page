@@ -11,9 +11,23 @@
   @apply bg-transparent
 }
 .btn_outline:hover{
+  
 
   @apply bg-[#f49f0a] 
 }
+.nav-link{
+  @apply text-lg font-bold duration-300
+}
+
+.title{
+
+  @apply font-semibold text-[#f49f0a]
+}
+
+
+
+/* styles.css */
+/* styles.css */
 /* styles.css */
 @keyframes move {
   50% {
@@ -30,6 +44,17 @@
   }
 }
 
+@keyframes scale-up {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .movingY {
   animation: move 3s linear infinite;
 }
@@ -38,4 +63,6 @@
   animation: spin-slow 5s linear infinite;
 }
 
-
+.scale-up {
+  animation: scale-up 3s linear infinite;
+}
