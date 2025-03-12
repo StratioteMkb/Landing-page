@@ -1,0 +1,113 @@
+ <!---------------------------------------------About us------------------------------------------------------------------->
+    <section id="about" class="text-white relative overflow-hidden">
+        <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20 pt-8">
+            <h2 class="title text-2xl md:text-3xl xl:text-4xl">About Us</h2>
+            <p class="max-w-2xl">Follow instructions for more</p>
+        </div>
+
+        <div class="space-y-10 xl:space-y-0 ">
+            <!------------------Item1--------------------------->
+            <div class="flex flex-col items-center lg:flex-row gap-5">
+                <!-----Image------>
+                <div class="w-full lg:w-1/2">
+                    <img src="assets/2.jpg" alt="mega" class=" w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+                </div>
+                <!-----------Contents----------->
+                <div class="w-full lg:w-1/2">
+                    <div class="space-y-5">
+                        <h3 class="title text-xl md:text-2xl xl:text-3xl ">
+                            <span class="text-[#f49f0a]">SOS Advertising</span> des idées qui font <span class="text-[#f49f0a]">la différence</span>
+                        </h3>
+                        <p >
+                            SOS ADVERTISING SARL est une agence de communication spécialisée dans la publicité. l'externalisation 
+                            commerciale et marketing, la distribution ainsi que l'organisation des événement socio-culturel.
+                            Au service du peuple congolais pour son objet et sa vision explique ci-dessous, sos est aussi une 
+                            plateforme d'investissement. La société emploie des personnes qualifiées et innovantes qui possèdent
+                            des compétences de vente et de communication et des années d'expériences pour répondre aux demandes et
+                            aux besoins exigeant de son secteur d'activite
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+team
+     <section id="Team" class="py-20 bg-white text-[#0a2463]">
+            <div class="container mx-auto px-6 md:px-12 lg:px-8">
+                <div class="mb-12 space-y-4 text-center">
+                    <h1 class="text-4xl font-bold md:text-5xl">
+                        Meet Our Team
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aliquid.
+                    </p>
+                    <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/pdt.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Pdt Israel Kompe                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">CEO Founder</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/Benie.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Benie Mavuba                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/pros1.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Prosper Kazadi                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center mt-10">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/maestro.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Jonathan Maestro                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+
+                        <div class="border-t-4 space-y-2 group text-center mt-10">
+                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
+                                <img src="assets/Chad.png" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
+                            </div>
+                            <div class="  text-center">
+                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                        Jonathan Maestro                                  
+                                </h5>
+                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                            </div>
+                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>

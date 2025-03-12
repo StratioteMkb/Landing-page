@@ -15,7 +15,10 @@
 </head>
 
 <body class="text-gray-900 font-inter opacity-100 bg-[#0a2463]">
-    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between max-w-full">
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between max-w-full ">
         <div class="flex justify-between items-center">
             <span class="text-2xl font-inter cursor-pointer">
                 <a href="#" class="flex items-center">
@@ -26,7 +29,7 @@
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 op-[-400px] transition-all ease-in duration-500">
+        <ul class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">Home</a>
             </li>
@@ -76,10 +79,18 @@
                     </button>
                 </div>
                 <div class="flex items-center gap-5 text-lg lg:pt10">
-                    <i class="ri-twitter-x-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                    <i class="ri-instagram-line text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                    <i class="ri-facebook-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
-                    <i class="ri-linkedin-fill text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base"></i>
+                    <a href="https://x.com/advertising_sos" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sosadvertisingco/" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://web.facebook.com/profile.php?id=100063702961835" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/sos-advertising-sas/" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
                 </div>
             </div>
                 <!---------------------------------Images--------------------------------------->
@@ -219,90 +230,150 @@
     </section>
 
     <!--------------------------------------------------Team------------------------------------------------------->
-    <section id="Team" class="py-20 bg-white text-[#0a2463]">
-            <div class="container mx-auto px-6 md:px-12 lg:px-8">
-                <div class="mb-12 space-y-4 text-center">
-                    <h1 class="text-4xl font-bold md:text-5xl">
-                        Meet Our Team
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aliquid.
-                    </p>
-                    <div class="py-20 grid gap-28 md:gap-12 md:grid-cols-3">
-                        <div class="border-t-4 space-y-2 group text-center">
-                            <div class="w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
-                                <img src="assets/pdt.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class="w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
-                            </div>
-                            <div class="  text-center">
-                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
-                                        Pdt Israel Kompe                                  
-                                </h5>
-                                <span class="text-sm text-[#0a2463] font-inter">CEO Founder</span>
-                            </div>
-                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+    <section id="Team" class="py-20 bg-gray-300 text-[#0a2463]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-8">
+            <div class="mb-12 space-y-4 text-center">
+                <h1 class="text-4xl font-bold md:text-5xl">
+                    Meet Our Team
+                </h1>
+                <p class="font-inter">
+                    Découvrez les talents qui façonnent notre succès. Notre équipe est composée de professionnels passionnés et engagés,
+                     chacun apportant son expertise unique pour innover et atteindre l'excellence. Ensemble, nous relevons les défis et
+                      créons des solutions qui font la différence.
+                </p>
+                <div class="py-20 grid gap-16 md:gap-12 md:grid-cols-3">
+                    <div class="border-t-4 space-y-2 group text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/pdt.jpg" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
                         </div>
-
-                        <div class="border-t-4 space-y-2 group text-center">
-                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
-                                <img src="assets/Benie.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
-                            </div>
-                            <div class="  text-center">
-                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
-                                        Benie Mavuba                                  
-                                </h5>
-                                <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
-                            </div>
-                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                Pdt Israel Kompe
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">CEO Founder</span>
                         </div>
-
-                        <div class="border-t-4 space-y-2 group text-center">
-                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
-                                <img src="assets/Pros.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
-                            </div>
-                            <div class="  text-center">
-                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
-                                        Prosper Kazadi                                  
-                                </h5>
-                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
-                            </div>
-                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Pdt Israel Kompe...</p>
                         </div>
-
-                        <div class="border-t-4 space-y-2 group text-center mt-10">
-                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
-                                <img src="assets/maestro.jpg" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
-                            </div>
-                            <div class="  text-center">
-                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
-                                        Jonathan Maestro                                  
-                                </h5>
-                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
-                            </div>
-                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                    </div>
+    
+                    <div class="border-t-4 space-y-2 group  text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/Benie.jpg" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
                         </div>
-
-                        <div class="border-t-4 space-y-2 group text-center mt-10">
-                            <div class="  w-32 h-32 -mt-16 mx-auto rounded-[2rem] rotate-45  overflow-hidden">
-                                <img src="assets/Chad.png" alt="ceo picture" loading="lazy" width="640" height="805" class=" w-full h-full object-cover -rotate-45 scale-125 mx-auto transition duration-300 group-hover:scale-[1.4]">
-                            </div>
-                            <div class="  text-center">
-                                <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
-                                        Jonathan Maestro                                  
-                                </h5>
-                                <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
-                            </div>
-                            <a href="#" class=" block w-max mx-auto text-center text-blue-500">View bio</a>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                Benie Mavuba
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
+                        </div>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Benie Mavuba...</p>
+                        </div>
+                    </div>
+                    <div class="border-t-4 space-y-2 group  text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/pros1.jpg" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                               Prosper Kazadi
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">Product Manager</span>
+                        </div>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Prosper Kazadi...</p>
+                        </div>
+                    </div>
+                    <div class="border-t-4 space-y-2 group mt-4 text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/Ruth.JPG" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                Ruth Kabezya
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
+                        </div>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Ruth Kabezya...</p>
+                        </div>
+                    </div>
+                    <div class="border-t-4 space-y-2 group mt-4 text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/chad1.jpg" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                Chadrack Mugalu
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">Marketing Manager</span>
+                        </div>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Chadrack Mugalu...</p>
+                        </div>
+                    </div>
+                    <div class="border-t-4 space-y-2 group mt-4 text-center">
+                        <div class="w-28 h-28 -mt-14 mx-auto rounded-[2rem] rotate-45 overflow-hidden">
+                            <img src="assets/maestro.jpg" alt="ceo picture" loading="lazy" class="w-full h-full object-cover -rotate-45 scale-110 mx-auto transition duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="text-center">
+                            <h5 class="text-xl mt-4 text-[#0a2463] font-semibold">
+                                Jonathan Maestro
+                            </h5>
+                            <span class="text-sm text-[#0a2463] font-inter">Graphic Designer</span>
+                        </div>
+                        <a href="#" class="block w-max mx-auto text-center text-blue-500 view-bio">View bio</a>
+                        <div class="bio-content hidden p-4 border rounded-lg bg-gray-100 mt-2 text-left">
+                            <p>Bio de Jonathan Maestro ...</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <script>
       
-      function Menu(e){
-      let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+      function Menu(e) {
+    let list = document.querySelector('ul');
+    let homeSection = document.getElementById('Home');
+
+    if (e.name === 'menu') {
+        e.name = "close";
+        list.classList.add('top-[80px]', 'opacity-100');
+        homeSection.style.marginTop = "200px"; // Décale le Home vers le bas
+    } else {
+        e.name = "menu";
+        list.classList.remove('top-[80px]', 'opacity-100');
+        homeSection.style.marginTop = "0"; // Remet à la normale
     }
+}
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.view-bio').forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            let bioContent = this.nextElementSibling;
+            bioContent.classList.toggle('hidden');
+        });
+    });
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.opacity = '0'; // Déclenche l'animation de fondu
+
+    setTimeout(() => {
+        loadingScreen.style.display = 'none'; // Cache l'écran après l'animation
+    }, 500); // Correspond à la durée de la transition CSS
+});
     </script>
     <script type="module" src="/src/main.ts"></script>
 </body>
