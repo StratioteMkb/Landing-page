@@ -14,36 +14,40 @@
     <title>SOS Advertising</title>
 </head>
 
-<body class="text-gray-900 font-inter opacity-100 bg-[#0a2463]">
+<body class="text-gray-900 font-inter opacity-100 bg-[#0a2463] overflow-x-hidden scroll-smooth">
     <div id="loading-screen">
         <div class="loader"></div>
     </div>
-    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between max-w-full ">
-        <div class="flex justify-between items-center">
-            <span class="text-2xl font-inter cursor-pointer">
-                <a href="#" class="flex items-center">
-                    <img src="./assets/logo couleur.png" alt="" class="h-5 inline lg:h-6 px-5 my-1">
-                </a>
-            </span>
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-        <ul class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">Home</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">About us</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">Services</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-[#F49F0A] duration-500">Team</a>
-            </li>
-        </ul>
-    </nav>
+ <header id="navbar">
+        <nav  class="p-5 bg-white shadow md:flex md:items-center md:justify-between max-w-full font-inter ">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-inter cursor-pointer">
+                    <a href="#" class="flex items-center">
+                        <img src="./assets/logo couleur.png" alt="" class="h-5 inline lg:h-6 px-5 my-1">
+                    </a>
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Home" class="text-xl hover:text-[#F49F0A] duration-500 nav-link ">Home</a>
+                </li>
+                
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Services" class="text-xl hover:text-[#F49F0A] duration-500 nav-link ">Services</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#about" class="text-xl hover:text-[#F49F0A] duration-500 nav-link ">About us</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#Team" class="text-xl hover:text-[#F49F0A] duration-500 nav-link ">Team</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+   
     <!---------------------------------------Home-------------------------------------------------->
     <section id="Home" class="py-20 md:py-28 relative">
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
@@ -57,7 +61,7 @@
             <div class="flex flex-col items-start gap-5 lg:flex-row lg:justify-between">
 
               <!-------------------------------Content----------------------------------------------------->
-              <div class="w-full space-y-5">
+              <div class=" home_data w-full space-y-5">
                 <h1 class="text-[48px] text-white">
                     Votre <span class="text-[#f49f0a] text-[48px] font-bold">Partenaire</span> en <span class="text-[#f49f0a] font-bold">Communication</span> et
                     <br>
@@ -113,70 +117,73 @@
         </div>
     </section>
     <!--------------------------------------Services--------------------------------------------->
-    <div class="bg-white text-[#0a2463] py-20">
-        <div class="container mx-auto px-4 w-full">
-            <!-----------------------------------------------card1------------------------------------------------------------------>
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-megaphone-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">La Publicité</p>
+    <section id="Services">
+        <div  class="bg-white text-[#0a2463] py-20">
+            <div class="container mx-auto px-4 w-full">
+                <!-----------------------------------------------card1------------------------------------------------------------------>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-megaphone-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">La Publicité</p>
+                        </div>
+                        <p class="font-stretch-50%">Nous créons des campagnes publicitaires percutantes et ciblées pour augmenter votre visibilité et attirer de nouveaux clients. De la conception créative à la diffusion stratégique, nous maximisons votre impact.</p>
                     </div>
-                    <p class="font-stretch-50%">Nous créons des campagnes publicitaires percutantes et ciblées pour augmenter votre visibilité et attirer de nouveaux clients. De la conception créative à la diffusion stratégique, nous maximisons votre impact.</p>
-                </div>
-            <!-----------------------------------------------card2------------------------------------------------------------------>
-
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-bar-chart-2-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">Externalisation commerciale et Marketing</p>
+                <!-----------------------------------------------card2------------------------------------------------------------------>
+    
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-bar-chart-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">Externalisation commerciale et Marketing</p>
+                        </div>
+                        <p class="font-stretch-50%"> Confiez-nous vos opérations commerciales et marketing. Nous vous apportons expertise et ressources pour développer votre chiffre d'affaires, optimiser vos stratégies et atteindre vos objectifs de croissance.</p>
                     </div>
-                    <p class="font-stretch-50%"> Confiez-nous vos opérations commerciales et marketing. Nous vous apportons expertise et ressources pour développer votre chiffre d'affaires, optimiser vos stratégies et atteindre vos objectifs de croissance.</p>
-                </div>
-            <!-----------------------------------------------card3------------------------------------------------------------------>
-
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-calendar-event-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">Organisation des événement</p>
+                <!-----------------------------------------------card3------------------------------------------------------------------>
+    
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-calendar-event-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">Organisation des événement</p>
+                        </div>
+                        <p class="font-stretch-50%">Nous organisons des événements mémorables et sur mesure, qu'il s'agisse de conférences, de séminaires ou de célébrations. Nous prenons en charge tous les aspects, de la planification à la réalisation.</p>
                     </div>
-                    <p class="font-stretch-50%">Nous organisons des événements mémorables et sur mesure, qu'il s'agisse de conférences, de séminaires ou de célébrations. Nous prenons en charge tous les aspects, de la planification à la réalisation.</p>
-                </div>
-            <!-----------------------------------------------card4------------------------------------------------------------------>
-
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-printer-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">Impression et broderie</p>
+                <!-----------------------------------------------card4------------------------------------------------------------------>
+    
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-printer-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">Impression et broderie</p>
+                        </div>
+                        <p class="font-stretch-50%">Nous réalisons des impressions de haute qualité et des broderies personnalisées pour vos vêtements, supports publicitaires et objets promotionnels. Exprimez votre identité avec des produits uniques.</p>
                     </div>
-                    <p class="font-stretch-50%">Nous réalisons des impressions de haute qualité et des broderies personnalisées pour vos vêtements, supports publicitaires et objets promotionnels. Exprimez votre identité avec des produits uniques.</p>
-                </div>
-            <!-----------------------------------------------card5------------------------------------------------------------------>
-
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-brush-2-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">Branding et Identité visuelle</p>
+                <!-----------------------------------------------card5------------------------------------------------------------------>
+    
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-brush-2-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">Branding et Identité visuelle</p>
+                        </div>
+                        <p class="font-stretch-50%">Nous créons des identités visuelles fortes et cohérentes qui reflètent l'essence de votre marque. Du logo à la charte graphique, nous construisons une image mémorable pour vous démarquer.</p>
                     </div>
-                    <p class="font-stretch-50%">Nous créons des identités visuelles fortes et cohérentes qui reflètent l'essence de votre marque. Du logo à la charte graphique, nous construisons une image mémorable pour vous démarquer.</p>
-                </div>
-            <!-----------------------------------------------card6------------------------------------------------------------------>
-
-                <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                    <div class="flex items-center gap-5">
-                        <i class="ri-camera-line text-3xl md:text-4xl xl:text-5xl"></i>
-                        <p class="md:text-lg font-bold">Production Multimédia</p>
+                <!-----------------------------------------------card6------------------------------------------------------------------>
+    
+                    <div class="border border-[#f49f0a] p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-camera-line text-3xl md:text-4xl xl:text-5xl"></i>
+                            <p class="md:text-lg font-bold">Production Multimédia</p>
+                        </div>
+                        <p class="font-stretch-50%">Nous produisons des contenus multimédias captivants pour tous vos supports : vidéos, photos, animations, etc. Nous racontons votre histoire avec créativité et professionnalisme.</p>
                     </div>
-                    <p class="font-stretch-50%">Nous produisons des contenus multimédias captivants pour tous vos supports : vidéos, photos, animations, etc. Nous racontons votre histoire avec créativité et professionnalisme.</p>
                 </div>
             </div>
         </div>
-    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+   
     <!---------------------------------------------About us------------------------------------------------------------------->
-    <section id="about" class="text-white relative overflow-hidden">
+    <section id="about" class="text-white relative overflow-hidden font-normal mb-3">
         <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20 pt-8">
             <h2 class="title text-2xl md:text-3xl xl:text-4xl">About Us</h2>
             <p class="max-w-2xl">Follow instructions for more</p>
@@ -230,7 +237,7 @@
     </section>
 
     <!--------------------------------------------------Team------------------------------------------------------->
-    <section id="Team" class="py-20 bg-gray-300 text-[#0a2463]">
+    <section id="Team" class="py-20 bg-white text-[#0a2463]">
         <div class="container mx-auto px-6 md:px-12 lg:px-8">
             <div class="mb-12 space-y-4 text-center">
                 <h1 class="text-4xl font-bold md:text-5xl">
@@ -337,6 +344,94 @@
             </div>
         </div>
     </section>
+    <!----------------------------------------------Footer---------------------------------------------->
+
+    <footer class="bg-[#0a2463] text-green-950 pt-20 pb-10 md:pt-28 relative">
+         <!--Social Icons-->
+         <div class="container mt-16 mb-10 flex flex-col items-center">
+            <div class="flex items-center w-full max-w-xs border-b border-[#f49f0a]"></div> 
+            <div class="bg-blue-950 text-lg text-center space-x-4 px-4 -mt-3 inline-flex">
+                <a href="https://x.com/advertising_sos" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="https://www.instagram.com/sosadvertisingco/" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=100063702961835" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/sos-advertising-sas/" target="_blank" class="text-slate-300 hover:text-[#f49f0a] duration-300 cursor-pointer text-base">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+            </div>
+         <!------------Content------------>
+         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start text-white">
+         <!--Item1-->
+         <div class="p-4 md:p-6">
+            <div>
+                <img src="assets/logo blanc 2.png" alt="" class="inline-block max-h-6 ">
+                
+            </div>
+         </div>
+         <!--Item3-->
+         <div class="flex flex-col gap-1">
+            <p class="mb-5 font-bold text-xl">Quick Link</p>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Teams</a>
+
+         </div>
+
+         <div class="flex flex-col gap-1">
+            <p class="mb-5 font-bold text-xl">Services</p>
+
+            <a href="#">Publicité</a>
+            <a href="#">Externalisation commerciale et Marketing</a>
+            <a href="#">Organisation des événement</a>
+            <a href="#">Impression et broderie</a>
+            <a href="#">Branding et Identité visuelle</a>
+            <a href="#">Production Multimédia</a>
+
+
+         </div>
+
+         <div class="flex flex-col gap-1">
+            <p class="mb-5 font-bold text-xl">Contact Us</p>
+
+            <a href="tel : +243815605436">+243 81 560 54 36</a>
+            <a href="mailto:sales@sosad-rdc.com">sales@sosad-rdc.com</a>
+            <br>
+            <p>Haut-Katanga, RDC</p>
+
+
+         </div>
+
+
+        
+
+         </div>
+
+         <!------------Copyright------------>
+         <div class="container ">
+            <p class="text-center mt-10  text-white">Copyright &copy; 2025 SOS Advertising. All rights reserved</p>
+         </div>
+        
+
+
+        
+
+    </footer>
+     <!------------Scrollup------------>
+     <a href="#Home" class="fixed right-4 -bottom-1/2 bg-white shadow-sm inline-block px-3 py-1 md:px-4 md:py-2 rounded-md 
+     text-lg z-50 hover:translate-y-1 duration-300 " id="scroll-up">
+        <i class="ri-arrow-up-line text-blue-950"></i>
+     </a>
+   
+    
+     
     <script>
       
       function Menu(e) {
@@ -356,6 +451,7 @@
 
 
     </script>
+    
     <script>
         document.querySelectorAll('.view-bio').forEach(button => {
         button.addEventListener('click', function(event) {
@@ -375,6 +471,10 @@
     }, 500); // Correspond à la durée de la transition CSS
 });
     </script>
-    <script type="module" src="/src/main.ts"></script>
+   <script src="assets/js/scrollreveal.min.js"></script>
+   <script type="module" src="/src/main.js"></script>
+   <script type="module" src="/src/main.ts"></script>
+
+
 </body>
 </html>

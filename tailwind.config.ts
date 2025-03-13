@@ -1,5 +1,12 @@
 import type { Config } from 'tailwindcss';
-
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 const config: Config = {
   content: [
     // ... votre contenu
@@ -23,5 +30,13 @@ const config: Config = {
   },
   plugins: [],
 };
+module.exports = {
+  content: ["./src/**/*.{html,js}", "./index.html"], // Adapter selon ton projet
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
 
 export default config;

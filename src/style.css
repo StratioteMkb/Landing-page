@@ -4,6 +4,14 @@
   --font-inter: "Inter", sans-serif;
 }
 
+html{
+  @apply overflow-x-hidden scroll-smooth;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .btn:hover{
   @apply opacity-90
 }
@@ -22,6 +30,9 @@
 .title{
 
   @apply font-semibold text-[#f49f0a]
+}
+.active{
+  @apply text-[#f49f0a] 
 }
 
 
@@ -93,4 +104,11 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.group {
+  transition: transform 0.3s ease;
+}
+
+.group:hover {
+  transform: translateY(-5px); /* Déplace la carte de 5 pixels vers le haut au survol */
 }
